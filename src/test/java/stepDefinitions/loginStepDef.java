@@ -16,7 +16,7 @@ public class loginStepDef {
 
     @Given("^I go to \"([^\"]*)\"$")
     public void i_go_to(String url) throws Throwable {
-        driver.get(url + "/owners/find");
+        driver.get(url);
         driver.manage().window().maximize();
     }
 
