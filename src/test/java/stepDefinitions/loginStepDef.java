@@ -16,13 +16,13 @@ public class loginStepDef {
 
     @Given("^I go to \"([^\"]*)\"$")
     public void i_go_to(String url) throws Throwable {
-        driver.get(url);
+        driver.get(url + "/owners/find");
         driver.manage().window().maximize();
     }
 
     @Then("^I click on home button$")
     public void i_click_on_home_button() throws Throwable {
-        driver.findElement(By.xpath("//input[@class='btn btn-primary btn-block']")).click();
+        driver.findElement(By.xpath("//input[@class='btn btn-default']")).click();
     }
 
     @Then("^I should see \"([^\"]*)\" tag$")
